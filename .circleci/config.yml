@@ -13,7 +13,6 @@ jobs:
 workflows:
   welcome:
     jobs:
-      - welcome/run
       - print_hello
       - Print_world:
           requires:
