@@ -11,9 +11,8 @@ jobs:
     steps:
       - run: echo world
 workflows:
-  welcome:
-    jobs:
-      - print_hello
-      - Print_world:
-          requires:
-            - print_hello
+  jobs:
+    - print_hello
+    - Print_world:
+        requires:
+          - print_hello
